@@ -11,6 +11,24 @@
 
 }
 
+h1, 
+h2, 
+h3, 
+p { 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -22,43 +40,71 @@ body {
     color: var(--text-color)
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* ===========HEADER========= */
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.site-navigation {
+    display: flex;
+    align-items: center;
+}
 .header {
     background-color: var(--light-background-color);
 }
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: var(--accent-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
 }
 .logo-dark {
     color: var(--dark-logo-black-color);
 }
 .navigation-list,
 .header-contact-list {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-contact-list {
+    margin-left: auto;
+}
+.navigation-list-item:not(:last-child),
+.header-contact-list-item:not(:last-child) {
+    margin-right: 50px;
 }
 .navigation-list {
     color: var(--title-color);
 }
-.navigation-list-item {
+.navigation-list-link {
     color: var(--title-color);
 }
-.header-contact-list-item {
+.header-contact-list-link {
     color: inherit;
 }
-.navigation-list-item.current,
-.navigation-list-item:hover,
-.navigation-list-item:focus,
-.header-contact-list-item:hover,
-.header-contact-list-item:focus {
+.navigation-list-link.current,
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-contact-list-link:hover,
+.header-contact-list-link:focus {
     color: var(--accent-color);
 }
 
