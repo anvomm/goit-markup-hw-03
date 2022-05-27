@@ -203,28 +203,49 @@ body {
 .work-list{
     display: flex;
 }
+.work-list-item {
+    flex-basis: calc((100% - 60px) / 3);
+}
 .work-list-item:not(:last-child) {
     margin-right: 30px;
 }
-.work-title {
-    margin-bottom: 50px;
-}
 .work-title,
 .our-team-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--title-color);
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
 }
 
 /*===============OUR TEAM============*/
 
+.our-team-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-member-card:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+.team-member {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.team-member-position {
+    margin-bottom: 30px;
+}
 .our-team {
     background-color: var(--light-grey-background-color);
 }
 .team-member-card {
+    flex-basis: calc((100% - 90px) / 4);
     background-color: var(--light-background-color);
 }
 .team-member,
@@ -241,6 +262,14 @@ body {
 
 /*==================FOOTER=============*/
 
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-link {
+    display: block;
+    margin-bottom: 20px;
+}
 .logo-light {
     color: var(--light-background-color);
 }
@@ -249,6 +278,10 @@ body {
 }
 .contact-info {
     font-style: normal;
+}
+.contact-info-address,
+.contact-info-mail {
+    margin-bottom: 9px;
 }
 .contact-info-mail,
 .contact-info-phone,
