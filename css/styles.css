@@ -8,6 +8,7 @@
     --text-color: #757575;
     --transparent-white-color: rgba(255, 255, 255, 0.6);
     --dark-logo-black-color: #000000;
+    --header-border-color: #ECECEC
 
 }
 
@@ -27,6 +28,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -46,6 +49,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid red;
 }
 /* ===========HEADER========= */
 
@@ -59,6 +63,7 @@ body {
 }
 .header {
     background-color: var(--light-background-color);
+    border-bottom: 1px solid var(--header-border-color);
 }
 .logo {
     padding-top: 24px;
@@ -77,8 +82,6 @@ body {
 .navigation-list,
 .header-contact-list {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -93,6 +96,11 @@ body {
 }
 .navigation-list {
     color: var(--title-color);
+}
+.navigation-list-link,
+.header-contact-list-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .navigation-list-link {
     color: var(--title-color);
@@ -114,25 +122,41 @@ body {
 .hero {
     background-color: var(--grey-background-color);
 }
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .hero-title {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;    
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--light-background-color);
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--light-background-color);
 }
 .hero-button {
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.85;
-        text-align: center;
-        letter-spacing: 0.06em;
-        color: var(--light-background-color);
-        background-color: var(--accent-color);
-        cursor: pointer;
+    min-width: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--light-background-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -141,13 +165,29 @@ body {
 
 /*===========ADVANTAGES SECTION=========*/
 
+.advantages-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantages-item {
+    flex-basis: calc((100% - 90px) / 4); 
+}
+.advantages-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
 .advantage-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--title-color);
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
 }
 .advantage-description {
         font-size: 14px;
@@ -157,6 +197,18 @@ body {
 
 /*===========OUR WORK SECTION===========*/
 
+.work-container {
+   padding-bottom: 94px; 
+}
+.work-list{
+    display: flex;
+}
+.work-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.work-title {
+    margin-bottom: 50px;
+}
 .work-title,
 .our-team-title {
         font-weight: 700;
