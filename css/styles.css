@@ -170,7 +170,7 @@ body {
 .advantages-item {
     flex-basis: calc((100% - 90px) / 4); 
 }
-.advantages-item:not(:nth-child(4n)) {
+.advantages-item:not(:last-child) {
     margin-right: 30px;
 }
 .advantage-title {
@@ -200,7 +200,7 @@ body {
 .work-list-item {
     flex-basis: calc((100% - 60px) / 3);
 }
-.work-list-item:not(:nth-child(3n)) {
+.work-list-item:not(:last-child) {
     margin-right: 30px;
 }
 .work-title,
