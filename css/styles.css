@@ -25,6 +25,7 @@ ul {
     margin-bottom: 0;
     margin-top: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
@@ -33,9 +34,6 @@ img {
     height: auto;
 }
 
-.list {
-    list-style: none;
-}
 .link {
     text-decoration: none;
 }
@@ -43,7 +41,9 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color)
 }
-
+.section {
+    padding: 94px 0px;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -163,10 +163,6 @@ body {
 
 /*===========ADVANTAGES SECTION=========*/
 
-.advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +192,7 @@ body {
 /*===========OUR WORK SECTION===========*/
 
 .work{
-   padding-bottom: 94px; 
+   padding-top: 0px; 
 }
 .work-list{
     display: flex;
@@ -221,10 +217,6 @@ body {
 
 /*===============OUR TEAM============*/
 
-.our-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .team-members-list {
     display: flex;
     flex-wrap: wrap;
@@ -310,10 +302,6 @@ body {
 
 /*=================PORTFOLIO===============*/
 
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .portfolio-filter {
     display: flex;
     justify-content: center;
