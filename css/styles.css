@@ -51,6 +51,18 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* ===========HEADER========= */
 
 .header-container {
@@ -65,10 +77,12 @@ body {
     background-color: var(--light-background-color);
     border-bottom: 1px solid var(--header-border-color);
 }
-.logo {
+.logo-header {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
+}
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -228,12 +242,8 @@ body {
 .team-member-card:not(:nth-last-child(-n+4)) {
     margin-bottom: 30px;
 }
-.team-member {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.team-member-position {
-    margin-bottom: 30px;
+.team-member-card-bottom {
+    margin: 30px 0;
 }
 .our-team {
     background-color: var(--light-grey-background-color);
@@ -250,6 +260,8 @@ body {
     letter-spacing: 0.03em;   
 }
 .team-member {
+    margin-bottom: 10px;
+
     font-weight: 500;
     color: var(--title-color); 
 }
@@ -273,8 +285,8 @@ body {
 .contact-info {
     font-style: normal;
 }
-.contact-info-address,
-.contact-info-mail {
+.footer-address,
+.footer-mail {
     margin-bottom: 9px;
 }
 .contact-info-mail,
@@ -344,11 +356,12 @@ body {
     margin-bottom: 30px;
 }
 .portfolio-card-bottom {
-    padding: 20px 24px 54px;
+    padding: 20px 24px;
     border: 1px solid var(--portfolio-card-border-color);
     border-top: none;
 }
 .projects-item-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
